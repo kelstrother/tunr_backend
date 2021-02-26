@@ -14,5 +14,4 @@ Song.create([
    { title: "Will it Go Round in Circles", artist: "Billy Preston", album: "Ultimate Collection: Billy Preston" },
    { title: "Miss March", artist: "Kaleid", album: "Kalision Course" },
    { title: "Gold Coast Hustle", artist: "Pretty Lights", album: "Glowing In The Darket Night" },
-   { title: "A Million Tomorrows", artist: "Pretty Lights", album: "Spilling Over Every Side" }
 ])
