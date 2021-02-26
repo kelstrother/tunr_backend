@@ -58,6 +58,7 @@ development:
 test:
   <<: *default
   database: tuna_tunr_app_test
+  
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -74,13 +75,12 @@ test:
 # URL environment variable explicitly:
 #
 #   production:
-#     url: <%= ENV['MY_APP_DATABASE_URL'] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
 production:
   <<: *default
-  database: tuna_tunr_app_production
-  username: tuna_tunr_app
-  password: <%= ENV['TUNA_TUNR_APP_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  adapter: postgresql
+
